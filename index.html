@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./imgs/logo.png">
     <title>Tailwind & Figma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,25 +26,26 @@
 </head>
 
 <body>
-    <header>
-        <!-- Header Hear -->
-        header
+    <header
+        class="px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray">
+        <a href="/" class="flex gap-3 items-center">
+            <img src="./imgs/logo.png" class="w-10" alt="">
+            <h4 class="font-bold">Personal</h4>
+        </a>
+        <ul class="hidden gap-4 font-semibold md:flex">
+            <li><a href="#about-me" class="hover:drop-shadow-md">About Me</a></li>
+            <li><a href="#skills" class="hover:drop-shadow-md">Skills</a></li>
+            <li><a href="#projects" class="hover:drop-shadow-md">Projects</a></li>
+            <li><a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a></li>
+        </ul>
+        <div>
+            <button class="primary-btn hidden md:flex">Resume <i class="fa-solid fa-download"></i></button>
+            <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"></i>
+        </div>
     </header>
     <main>
-        <section id="hero">hero Section</section>
-         <section id="skills" class="skills">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React</div>
-                <div class="skill">Node.js</div>
-                <div class="skill">MongoDB</div>
-                <div class="skill">Git</div>
-                <div class="skill">Sass</div>
-            </div>
-        </section>
+        <section id="hero" class="mt-20">hero Section</section>
+        <section id="skills">skills Section</section>
         <section id="about-me">about-me Section</section>
         <section id="projects">projects Section</section>
         <section id="testimonials">testimonials Section</section>

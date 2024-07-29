@@ -38,7 +38,7 @@ p {
 }
 
 section {
-    padding-inline: 5%;
+    padding-inline: 7%;
     padding-block: 3rem;
     text-align: center;
 
@@ -48,7 +48,7 @@ section {
     all: unset;
     background: var(--primary);
     color: var(--white);
-    padding: 0.3rem 1rem;
+    padding: 0.4rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +56,7 @@ section {
     border-radius: 4px;
     margin-inline: auto;
     cursor: pointer;
+    font-size: smaller;
 }
 
 .primary-btn:hover {
