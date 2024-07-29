@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./imgs/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./imgs/logo.png" />
     <title>Tailwind & Figma</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#000000',
-                        secondary: '#404040',
-                        "lighter-gray": "71717A",
-                        white: '#ffffff',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#000000",
+              secondary: "#404040",
+              "lighter-gray": "71717A",
+              white: "#ffffff",
+            },
+          },
+        },
+      };
     </script>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Header Hear -->
-        header
+      <!-- Header Hear -->
+      header
     </header>
     <main>
-        <section id="hero">hero Section</section>
-        <section id="skills">skills Section</section>
-        <section id="about-me">about-me Section</section>
-        <section id="projects">projects Section</section>
-        <section id="testimonials">testimonials Section</section>
-        <section id="contact-me">contact-me Section</section>
+      <section id="hero">hero Section</section>
+      <section id="skills">skills Section</section>
+
+      <section id="about-me">
+        <div id="about-me-contrainer" class="flex flex-row gap-12 items-start">
+          <div id="about-me-left-side" class="">
+            <img class="flex-auto w-525 " src="undraw_male_avatar_g98d.svg" alt="avatar picture" />
+          </div>
+
+          <div id="about-me-right-side" class="text-left">
+            <h3 class="text-2xl">About <span class="font-bold">Me</span></h3>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, in
+              tenetur! Nesciunt consectetur ad eius molestias aspernatur facere
+              nam, modi ipsa obcaecati, incidunt vero libero? Rerum facilis
+              neque reiciendis ducimus.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+              dolore consectetur placeat quisquam excepturi explicabo.
+              Consequuntur numquam quo unde sed, nostrum voluptatem illo iste
+              totam error eos incidunt earum non.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et in
+              illum dolorum placeat, corrupti voluptatum exercitationem ut
+              earum, veritatis temporibus possimus eligendi. Veritatis aut
+              voluptas, animi ea deleniti enim officiis!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">projects Section</section>
+      <section id="testimonials">testimonials Section</section>
+      <section id="contact-me">contact-me Section</section>
     </main>
     <footer>
-        <!-- Footer Here -->
-        footer
+      <!-- Footer Here -->
+      footer
     </footer>
-</body>
-
+  </body>
 </html>
