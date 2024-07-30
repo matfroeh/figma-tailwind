@@ -16,24 +16,33 @@
     transition-duration: 0.2s;
     scroll-behavior: smooth;
 }
+.text-outline {
+    color: white; /* Text color */
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000; /* Outline color */
+}
 
 h1 {
-    font-size: 48px;
+    font-size: 48px !important;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 32px !important;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 28px !important;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 20px !important; 
 }
 
 p {
+    font-size: small;
     color: var(--secondary);
 }
 
@@ -75,4 +84,20 @@ section {
 
 
 /* Small device */
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    
+    /* h2 {
+        font-size: 32px !important;
+    }
+    
+    h3 {
+        font-size: 28px !important;
+    }
+    
+    h4 {
+        font-size: 20px !important; 
+    } */
+}
