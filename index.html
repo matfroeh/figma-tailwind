@@ -29,32 +29,46 @@
 
   <body>
     <header
-      class="px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray"
-    >
-      <a href="/" class="flex gap-3 items-center">
-        <img src="./imgs/logo.png" class="w-10" alt="" />
-        <h4 class="font-bold">Personal</h4>
-      </a>
-      <ul class="hidden gap-4 font-semibold md:flex">
-        <li><a href="#about-me" class="hover:drop-shadow-md">About Me</a></li>
-        <li><a href="#skills" class="hover:drop-shadow-md">Skills</a></li>
-        <li><a href="#projects" class="hover:drop-shadow-md">Projects</a></li>
-        <li>
-          <a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a>
-        </li>
-      </ul>
-      <div>
-        <button class="primary-btn hidden md:flex">
-          Resume <i class="fa-solid fa-download"></i>
-        </button>
-        <i
-          class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"
-        ></i>
-      </div>
-    </header>
-    <main>
+        class="z-50 px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray">
+        <a href="#hero" class="flex gap-3 items-center">
+            <img src="./imgs/logo.png" class="w-10" alt="">
+            <h4 class="font-bold">Personal</h4>
+        </a>
+        <ul class="hidden gap-4 font-semibold md:flex">
+            <li><a href="#about-me" class="hover:drop-shadow-md">About Me</a></li>
+            <li><a href="#skills" class="hover:drop-shadow-md">Skills</a></li>
+            <li><a href="#projects" class="hover:drop-shadow-md">Projects</a></li>
+            <li><a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a></li>
+        </ul>
+        <div>
+            <button class="primary-btn hidden md:flex">Resume <i class="fa-solid fa-download"></i></button>
+            <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"></i>
+        </div>
 
-        <section id="hero" class="mt-20">hero Section</section>
+    </header>
+    <!-- Main -->
+    <main>
+        <section id="hero" class="mt-20  grid lg:grid-cols-2">
+            <div class="relative lg:order-2">
+                <img src="./imgs/hero.png" class="relative lg:-left-16 z-0" alt="hero">
+            </div>
+            <div class="text-start relative flex flex-col justify-end gap-3 lg:gap-6 lg:order-1 mt-6">
+                <h1><span>Hello i'am</span> <span class="font-bold">Elun Mask.</span></h1>
+                <h1><span class="font-bold">Frontend</span> <span
+                        class="text-white font-bold text-outline">Developer</span></h1>
+                <h1><span>Based in</span> <span class="font-bold">Germany</span></h1>
+                <p class="font-semibold text-sm md:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ratione
+                    totam esse delectus a iusto, perferendis ad quia, praesentium qui fugit saepe natus numquam debitis!
+                    Possimus quaerat a itaque quidem.</p>
+                <div
+                    class="flex gap-6 [&>a]:size-12 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-xl [&>a]:rounded-md [&>a]:border-2 [&>a]:border-primary [&>a]:cursor-pointer">
+                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-github"></i></a>
+                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
         <section id="skills" class="p-10 bg-gray-100">
         <h1 class="text-3xl font-bold text-center">My Skills</h1>
         <div class="flex justify-center mt-6">
