@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/*" href="./imgs/faveicon.svg" />
-    <title>Tailwind & Figma</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#000000",
-              secondary: "#404040",
-              "lighter-gray": "71717A",
-              white: "#ffffff",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/*" href="./imgs/logo.svg" />
+  <title>Tailwind & Figma</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#000000",
+            secondary: "#404040",
+            "lighter-gray": "71717A",
+            white: "#ffffff",
           },
         },
-      };
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body>
-    <header
-        class="z-50 px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray">
-        <a href="#hero" class="flex gap-3 items-center">
-            <img src="./imgs/logo.png" class="w-10" alt="">
-            <h4 class="font-bold">Personal</h4>
-        </a>
-        <ul class="hidden gap-4 font-semibold md:flex">
-            <li><a href="#about-me" class="hover:drop-shadow-md">About Me</a></li>
-            <li><a href="#skills" class="hover:drop-shadow-md">Skills</a></li>
-            <li><a href="#projects" class="hover:drop-shadow-md">Projects</a></li>
-            <li><a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a></li>
-        </ul>
-        <div>
-            <button class="primary-btn hidden md:flex">Resume <i class="fa-solid fa-download"></i></button>
-            <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"></i>
+<body>
+  <header
+    class="z-50 px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray">
+    <a href="#hero" class="flex gap-3 items-center">
+      <img src="./imgs/logo.svg" class="w-10" alt="">
+      <h4 class="font-bold">Personal</h4>
+    </a>
+    <ul class="hidden gap-4 font-semibold md:flex">
+      <li><a href="#about-me" class="hover:drop-shadow-md">About Me</a></li>
+      <li><a href="#skills" class="hover:drop-shadow-md">Skills</a></li>
+      <li><a href="#projects" class="hover:drop-shadow-md">Projects</a></li>
+      <li><a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a></li>
+    </ul>
+    <div>
+      <button class="primary-btn hidden md:flex">Resume <i class="fa-solid fa-download"></i></button>
+      <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"></i>
+    </div>
+
+  </header>
+  <!-- Main -->
+  <main>
+    <section id="hero" class="mt-20  grid lg:grid-cols-2">
+      <div class="relative lg:order-2">
+        <img src="./imgs/hero.png" class="relative lg:-left-16 z-0" alt="hero">
+      </div>
+      <div class="text-start relative flex flex-col justify-end gap-3 lg:gap-5 lg:order-1 mt-6 lg:mt-0">
+        <h1><span>Hello i'am</span> <span class="font-bold">Elun Mask.</span></h1>
+        <h1><span class="font-bold">Frontend</span> <span class="text-white font-bold text-outline">Developer</span>
+        </h1>
+        <h1><span>Based in</span> <span class="font-bold">Germany</span></h1>
+        <p class="font-semibold text-sm ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate ratione
+          totam esse delectus a iusto, perferendis ad quia, praesentium qui fugit saepe natus numquam debitis!
+          Possimus quaerat a itaque quidem.</p>
+        <div
+          class="flex gap-6 [&>a]:size-12 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-xl [&>a]:rounded-md [&>a]:border-2 [&>a]:border-primary [&>a]:cursor-pointer">
+          <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-github"></i></a>
+          <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-twitter"></i></a>
         </div>
-
-    </header>
-    <!-- Main -->
-    <main>
-        <section id="hero" class="mt-20  grid lg:grid-cols-2">
-            <div class="relative lg:order-2">
-                <img src="./imgs/hero.png" class="relative lg:-left-16 z-0" alt="hero">
-            </div>
-            <div class="text-start relative flex flex-col justify-end gap-3 lg:gap-6 lg:order-1 mt-6">
-                <h1><span>Hello i'am</span> <span class="font-bold">Elun Mask.</span></h1>
-                <h1><span class="font-bold">Frontend</span> <span
-                        class="text-white font-bold text-outline">Developer</span></h1>
-                <h1><span>Based in</span> <span class="font-bold">Germany</span></h1>
-                <p class="font-semibold text-sm md:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ratione
-                    totam esse delectus a iusto, perferendis ad quia, praesentium qui fugit saepe natus numquam debitis!
-                    Possimus quaerat a itaque quidem.</p>
-                <div
-                    class="flex gap-6 [&>a]:size-12 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:text-xl [&>a]:rounded-md [&>a]:border-2 [&>a]:border-primary [&>a]:cursor-pointer">
-                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-github"></i></a>
-                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="hover:bg-primary hover:text-white"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="p-10 bg-gray-100">
+      </div>
+    </section>
+     <section id="skills" class="bg-gray-100">
         <h1 class="text-3xl font-bold text-center">My Skills</h1>
         <div class="flex justify-center mt-6">
             
             <div class="p-4">
-                
                 <p>HTML </p>
                 <i class="fa-brands fa-html5"></i>
             </div>
             <div class="p-4" >
-                
                 <p>CSS</p>
                 <i class="fa-solid fa-file-code"></i>
             </div>
-            
             <div class="p-4">
-
             </div>
             <div class="p-4">
                 <p>JavaScript</p>
@@ -107,11 +102,10 @@
                 <p>storybook</p>
                 <i class="fa-solid fa-book"></i>
             </div>
-
         </div>
     </section>
-      
-      <section id="about-me">
+    
+    <section id="about-me">
         <div
           id="about-me-contrainer"
           class="grid grid-cols-2 gap-12 items-start"
@@ -220,7 +214,36 @@
         </div>
       </section>
 
-      <section id="testimonials">testimonials Section</section>
+      <section id="testimonials">
+      <h1>My <span class="font-bold">Testimonials</span></h1>
+      <div
+        class="mt-10 grid lg:grid-cols-3 gap-8 [&>div]:shadow-lg [&>div]:py-16 [&>div]:rounded-md [&>div]:flex [&>div]:flex-col [&>div]:gap-4 [&>div]:justify-center [&>div]:items-center [&>div>p]:w-[75%] [&>div>h4]:font-semibold">
+        <div class="">
+
+          <img src="./imgs/testimonial.png" class="" alt="">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure minima sequi cupiditate id ut
+            impedit assumenda corrupti ab saepe!</p>
+          <h4>Basel Mohamed</h4>
+          <p>Web Developer</p>
+        </div>
+        <div class="text-white bg-primary">
+          <img src="./imgs/testimonial-black.png" class="hue-rotate-90 " alt="">
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure minima sequi
+            cupiditate id ut
+            impedit assumenda corrupti ab saepe!</p>
+          <h4>Twana Khudhur</h4>
+          <p class="text-white">Web Developer</p>
+        </div>
+        <div class="">
+          <img src="./imgs/testimonial.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure minima sequi cupiditate id ut
+            impedit assumenda corrupti ab saepe!</p>
+          <h4>Matthias Fröhlich</h4>
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </section>
      <section id="contact" class="bg-gray-100">
     <h1>Contact Me</h1>
   <div class="max-w-7xl mx-auto p-6">
@@ -261,5 +284,14 @@
           <div>&copy; 2019-2024 Personal | Made in Figma</div>
         </div>
       </footer>
-  </body>
+  
+  
+    </body>
 </html>
+    
+    
+    
+    
+    
+    
+   
