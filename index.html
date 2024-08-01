@@ -20,7 +20,7 @@
             colors: {
               primary: "#000000",
               secondary: "#404040",
-              "lighter-gray": "71717A",
+              lighterGray: "71717A",
               white: "#ffffff",
             },
           },
@@ -31,7 +31,7 @@
   </head>
   <body>
     <header
-      class="z-50 px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray"
+      class="z-40 px-[7%] h-20 bg-white flex justify-between items-center fixed top-0 w-full border-b border-lighter-gray"
     >
       <a href="#hero" class="flex gap-3 items-center">
         <img src="./imgs/logo.svg" class="w-10" alt="" />
@@ -45,14 +45,59 @@
           <a href="#contact-me" class="hover:drop-shadow-md">Contact Me</a>
         </li>
       </ul>
-      <div>
-        <button class="primary-btn hidden md:flex">
-          Resume <i class="fa-solid fa-download"></i>
-        </button>
-        <i
-          class="fa-solid fa-bars md:hidden text-xl cursor-pointer hover:drop-shadow-md"
-        ></i>
+
+      <div class="flex items-center gap-5">
+        <a
+          href="./imgs/resume.pdf"
+          download="elon-musk-resume"
+          class="primary-btn"
+        >
+          <span class="hidden md:flex">Resume</span>
+          <i class="fa-solid fa-download"></i>
+        </a>
+        <label
+          for="menu-toggle"
+          class="cursor-pointer md:hidden text-xl hover:drop-shadow-md"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
       </div>
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <!-- Responsive Nav -->
+      <ul
+        id="responsive-nav"
+        class="md:hidden flex flex-col items-center justify-center font-semibold bg-white absolute w-full z-50 top-20 left-0 [&>li]:w-full overflow-hidden transition-all h-0 peer-checked:h-[300px] peer-checked:shadow-lg duration-500"
+      >
+        <li>
+          <a
+            href="#about-me"
+            class="w-[100%] block py-5 text-center hover:bg-gray-200"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            href="#skills"
+            class="w-[100%] block py-5 text-center hover:bg-gray-200"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="w-[100%] block py-5 text-center hover:bg-gray-200"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact-me"
+            class="w-[100%] block py-5 text-center hover:bg-gray-200"
+            >Contact Me</a
+          >
+        </li>
+      </ul>
     </header>
     <!-- Main -->
     <main>
@@ -151,10 +196,11 @@
       </section>
       <!-- About me -->
       <section id="about-me">
-        <div
-          class="grid md:grid-cols-2 gap-12 items-start"
-        >
-          <div id="about-me-left-side" class="place-self-center md:place-self-end">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div
+            id="about-me-left-side"
+            class="place-self-center md:place-self-end"
+          >
             <img
               class="grayscale object-contain"
               src="./imgs/about-me.png"
@@ -373,11 +419,11 @@
         </div>
       </section>
     </main>
-   <footer
+    <footer
       class="bg-primary text-white text-center px-[7%] flex justify-between items-center py-4"
     >
       <div class="flex items-center text-white space-x-2">
-        <img src="./imgs/logo-white.svg"  alt="">
+        <img src="./imgs/logo-white.svg" alt="" />
         <span>Elon Musk</span>
       </div>
       <p class="text-sm">&copy; 2024 Elon Musk</p>
