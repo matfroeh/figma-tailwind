@@ -150,22 +150,21 @@
       </section>
 
       <section id="projects" class="bg-black text-white">
-        <h3 class="text-2xl mb-8 -mt-4">My <span class="font-bold">Projects</span></h3>
+        <h1 class="text-2xl mb-8 -mt-4">My <span class="font-bold">Projects</span></h1>
 
         <div
-          id="projects-contrainer"
-          class="grid grid-cols-2 gap-12 items-start">
+          id="projects-container"
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-          <div id="projects-item-1" class="p-4">
+          <div id="projects-item-1" class="md:order-1 p-4 max-w-80">
             <img
               class="rounded-lg align-top"
-              src="https://picsum.photos/seed/594/476"
+              src="/imgs/project1.jpg"
               alt="my projects picture 1"
             />
           </div>
-
-          <div id="projects-item-2" class="text-left self-center">
-            <h3 class="text-2xl mb-4">01</h3>
+          <div id="projects-item-2" class="md:order-2 text-left self-center">
+            <h2 class="text-2xl mb-4">01</h>
             <h2 class="font-bold">Web Design</h2>
             <p class="mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
@@ -176,8 +175,15 @@
             <i class="fa-solid fa-arrow-up-right-from-square mt-4"></i>
           </div>
 
-          <div id="projects-item-3" class="text-left self-center">
-            <h3 class="text-2xl mb-4">02</h3>
+          <div id="projects-item-3" class="md:order-4 p-4 max-w-80">
+            <img
+              class="rounded-lg"
+              src="/imgs/project2.jpg"
+              alt="my projects picture 2"
+            />
+          </div>
+          <div id="projects-item-4" class="md:order-3 text-left self-center">
+            <h2 class="text-2xl mb-4">02</h2>
             <h2 class="font-bold">App Development</h2>
             <p class="mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
@@ -188,25 +194,16 @@
             <i class="fa-solid fa-arrow-up-right-from-square mt-4"></i>
           </div>
 
-          <div id="projects-item-4" class="p-4">
+          <div id="projects-item-5" class="md:order-5 p-4 max-w-80">
             <img
               class="rounded-lg"
-              src="https://picsum.photos/594/476"
-              alt="my projects picture 2"
-            />
-          </div>
-
-          <div id="projects-item-5" class="p-4">
-            <img
-              class="rounded-lg"
-              src="https://picsum.photos/594/476?"
+              src="/imgs/project3.jpg"
               alt="my projects picture 3"
             />
           </div>
-
-          <div id="projects-item-6" class="text-left self-center">
-            <h3 class="text-2xl mb-4">03</h3>
-            <h2 class="font-bold">Database management</h2>
+          <div id="projects-item-6" class="md:order-6 text-left self-center">
+            <h2 class="text-2xl mb-4">03</h2>
+            <h2 class="font-bold">Database Management</h2>
             <p class="mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
               quibusdam animi similique saepe sit possimus enim quae, alias odit
